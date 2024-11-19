@@ -15,11 +15,37 @@ button, input, select, textarea {
 }
 
 .container {
-    max-width: 1290px;
+    max-width: 80.625rem; // 1290px / 16
     margin: 0 auto;
 
-    @include media(1312) {
-        max-width: calc(100% - 22px);
+    @include media(1312) { // 1312px / 16
+        max-width: calc(100% - 100px); // 22px / 16
+    }
+
+    @include media(768) { // 1312px / 16
+        max-width: calc(100% - 22px); // 22px / 16
+    }
+}
+
+html {
+    @include media (1312) {
+        font-size: 40px;
+    }
+
+    @include media (1450) {
+        font-size: 14px;
+    }
+
+    @include media(-1700) {
+        font-size: 18px;
+    }
+
+    @include media(-1900) {
+        font-size: 20px;
+    }
+
+    @include media(-2000) {
+        font-size: 22px;
     }
 }
 

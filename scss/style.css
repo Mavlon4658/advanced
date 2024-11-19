@@ -80,12 +80,43 @@ button, input, select, textarea {
 }
 
 .container {
-  max-width: 1290px;
+  max-width: 80.625rem;
   margin: 0 auto;
 }
 @media screen and (max-width: 1312px) {
   .container {
+    max-width: calc(100% - 100px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
     max-width: calc(100% - 22px);
+  }
+}
+
+@media screen and (max-width: 1312px) {
+  html {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 22px;
   }
 }
 
