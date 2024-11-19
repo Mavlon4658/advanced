@@ -1,1 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <a href="/" class="header__logo">
+                        <img src="./images/logo-dark.svg" alt="">
+                        <img src="./images/logo-light.svg" alt="">
+                    </a>
+                    <div class="networks">
+                        <a href="#" class="location-icon">
+                            <img src="./images/map.svg" alt="">
+                            <span>Slokas 52, Riga</span>
+                        </a>
+                        <ul class="networks_link">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/network-1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/network-2.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/network-3.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/network-4.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="service_link">
+                            <a href="tel:+37126858674">+371 26858674</a>
+                            <p>Обслуживанеи клиентов</p>
+                        </div>
+                        <div class="select_lang">
+                            <div class="select_lang__btn">
+                                <img src="./images/globe.svg" alt="">
+                                <input type="text" value="Ru" disabled>
+                                <img src="./images/arrow-down.svg" alt="">
+                            </div>
+                            <ul class="select_lang__list">
+                                <li>Ru</li>
+                                <li>En</li>
+                                <li>Fr</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="bars">
+                        <img src="./images/bars.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Продажа авто</a>
+                        </li>
+                        <li>
+                            <a href="#">Покупка авто</a>
+                        </li>
+                        <li>
+                            <a href="#">Реализация</a>
+                        </li>
+                        <li>
+                            <a href="#">Почему мы</a>
+                        </li>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-red modal__open">Заказать звонок</a>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Mobile menu -->
+        <section class="mobile-menu">
+            <div class="mobile-menu__top">
+                <div class="mobile-menu__head">
+                    <a href="/">
+                        <img src="./images/logo-dark.svg" alt="">
+                    </a>
+                    <button class="mobile-menu__close">
+                        <img src="./images/times-blue.svg" alt="">
+                    </button>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Продажа авто</a>
+                    </li>
+                    <li>
+                        <a href="#">Покупка авто</a>
+                    </li>
+                    <li>
+                        <a href="#">Реализация</a>
+                    </li>
+                    <li>
+                        <a href="#">Почему мы</a>
+                    </li>
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-menu__bottom">
+                <a href="#" class="btn-red">Заказать звонок</a>
+                <div class="service_link">
+                    <a href="tel:+37126858674">+371 26858674</a>
+                    <p>Обслуживанеи клиентов</p>
+                </div>
+                <div class="mobile-menu__bottom_in">
+                    <a href="#" class="location-icon">
+                        <img src="./images/map.svg" alt="">
+                        <span>Slokas 52, Riga</span>
+                    </a>
+                    <ul class="networks_link">
+                        <li>
+                            <a href="#">
+                                <img src="./images/network-1.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/network-2.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/network-3.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/network-4.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="select_lang">
+                        <div class="select_lang__btn">
+                            <img src="./images/globe.svg" alt="">
+                            <input type="text" value="Ru" disabled>
+                            <img src="./images/arrow-down.svg" alt="">
+                        </div>
+                        <ul class="select_lang__list">
+                            <li>Ru</li>
+                            <li>En</li>
+                            <li>Fr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mobile menu end -->
+
+        <!-- Modal -->
+        <section class="modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content contact-form">
+                <button class="modal__close">
+                    <img src="./images/times-white.svg" alt="">
+                </button>
+                <h2 class="modal__title">Оставьте ваше сообщение</h2>
+                <div class="form_group">
+                    <div class="form_group__item">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="tel" placeholder="Ваш номер телефона">
+                    </div>
+                    <textarea name="" id="" placeholder="Комментарий"></textarea>
+                    <div class="btns">
+                        <img src="./images/capcha.png" class="capcha" alt="">
+                        <button class="btn-red">Подобрать</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal end -->
+
+        <main>
+
+            <!-- Home -->
+            <section class="home">
+                <img src="./images/home-bg.png" alt="" class="home__bg">
+                <div class="container home__container">
+                    <h2>Продажа проверенных <br>б/у автомобилей <br>из европы</h2>
+                    <p>Послепродажное обслуживание и гарантия. <br> Станьте нашим клиентом уже сегодня.</p>
+                    <a href="#" class="btn-red">Подробнее</a>
+                </div>
+            </section>
+            <!-- Home end -->
+
+            <!-- For sale -->
+            <section class="for-sale">
+                <div class="container">
+                    <h2 class="for-sale__title sec-title">Продажа авто /Найдено 576 авто</h2>
+                    <div class="for-sale__filter">
+                        <div class="select">
+                            <label for="">Сортировать:</label>
+                            <select name="" id="">
+                                <option value="">по умолчанию</option>
+                                <option value="">по умолчанию</option>
+                                <option value="">по умолчанию</option>
+                                <option value="">по умолчанию</option>
+                                <option value="">по умолчанию</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <label for="">Отображать:</label>
+                            <select name="" id="">
+                                <option value="">по 32</option>
+                                <option value="">по 32</option>
+                                <option value="">по 32</option>
+                                <option value="">по 32</option>
+                                <option value="">по 32</option>
+                            </select>
+                        </div>
+                    </div>
+                    <ul class="for-sale__car_wrap">
+                        <li class="for-sale__car">
+                            <img src="./images/for-sale-car.png" alt="" class="main-img">
+                            <h3 class="title">BMW 320d (135kw)</h3>
+                            <p class="description">2014, 223 т. км., Автомат, 2.0  TDI</p>
+                            <div class="price">12 500 EUR</div>
+                            <ul class="datas">
+                                <li>
+                                    <img src="./images/car-data-icon-1.svg" alt="">
+                                    <div>
+                                        <p>Год выпуска</p>
+                                        <h4>223 326</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/car-data-icon-2.svg" alt="">
+                                    <div>
+                                        <p>Пробег</p>
+                                        <h4>223 326</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/car-data-icon-3.svg" alt="">
+                                    <div>
+                                        <p>Артикул</p>
+                                        <h4>223 326</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/car-data-icon-4.svg" alt="">
+                                    <div>
+                                        <p>Тип продажи</p>
+                                        <h4>Свой авто</h4>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn-dark">Подробнее</a>
+                        </li>
+                        <li class="for-sale__car">
+                            <img src="./images/for-sale-car.png" alt="" class="main-img">
+                            <h3 class="title">BMW 320d (135kw)</h3>
+                            <p class="description">2014, 223 т. км., Автомат, 2.0  TDI</p>
+                            <div class="price">12 500 EUR</div>
+                            <ul class="datas">
+                                <li>
+                                    <img src="./images/car-data-icon-1.svg" alt="">
+                                    <div>
+                                        <p>Год выпуска</p>
+                                        <h4>223 326</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/car-data-icon-2.svg" alt="">
+                                    <div>
+                                        <p>Пробег</p>
+                                        <h4>223 326</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/car-data-icon-3.svg" alt="">
+                                    <div>
+                                        <p>Артикул</p>
+                                        <h4>223 326</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/car-data-icon-4.svg" alt="">
+                                    <div>
+                                        <p>Тип продажи</p>
+                                        <h4>Свой авто</h4>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn-dark">Подробнее</a>
+                        </li>
+                        <li class="for-sale__car">
+                            <img src="./images/for-sale-car.png" alt="" class="main-img">
+                            <h3 class="title">BMW 320d (135kw)</h3>
+                            <p class="description">2014, 223 т. км., Автомат, 2.0  TDI</p>
+                            <div class="price">12 500 EUR</div>
+                            <ul class="datas">
+                                <li>
+                                    <img src="./images/car-data-icon-1.svg" alt="">
+                                    <div>
+                                        <p>Год выпуска</p>
+                                        <h4>223 326</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/car-data-icon-2.svg" alt="">
+                                    <div>
+                                        <p>Пробег</p>
+                                        <h4>223 326</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/car-data-icon-3.svg" alt="">
+                                    <div>
+                                        <p>Артикул</p>
+                                        <h4>223 326</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/car-data-icon-4.svg" alt="">
+                                    <div>
+                                        <p>Тип продажи</p>
+                                        <h4>Свой авто</h4>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn-dark">Подробнее</a>
+                        </li>
+                        <li class="for-sale__car">
+                            <img src="./images/for-sale-car.png" alt="" class="main-img">
+                            <h3 class="title">BMW 320d (135kw)</h3>
+                            <p class="description">2014, 223 т. км., Автомат, 2.0  TDI</p>
+                            <div class="price">12 500 EUR</div>
+                            <ul class="datas">
+                                <li>
+                                    <img src="./images/car-data-icon-1.svg" alt="">
+                                    <div>
+                                        <p>Год выпуска</p>
+                                        <h4>223 326</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/car-data-icon-2.svg" alt="">
+                                    <div>
+                                        <p>Пробег</p>
+                                        <h4>223 326</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/car-data-icon-3.svg" alt="">
+                                    <div>
+                                        <p>Артикул</p>
+                                        <h4>223 326</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./images/car-data-icon-4.svg" alt="">
+                                    <div>
+                                        <p>Тип продажи</p>
+                                        <h4>Свой авто</h4>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn-dark">Подробнее</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- For sale end -->
+
+            <!-- Buying -->
+            <section class="buying">
+                <div class="container buying__container">
+                    <h2 class="sec-title buying__title">Покупка вашего авто </h2>
+                    <p class="buying__description">
+                        Если вы хотите предложить нам свой автомобиль для выкупа, пожалуйста заполните форму, которая представлена ниже. 
+                        <br><br>
+                        <a href="#">* Перед выкупом, мы проверяем все автомобили на выезде или у нас в автосервисе.</a>
+                    </p>
+                    <div class="contact-form">
+                        <ul class="contact-form__radio">
+                            <li>
+                                <input type="radio" checked name="type" id="">
+                                <label for="">
+                                    <span class="icon"></span>
+                                    <span>Я продавец</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" name="type" id="">
+                                <label for="">
+                                    <span class="icon"></span>
+                                    <span>Я автодиллер</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="form_group">
+                            <div class="form_group__item">
+                                <input type="text" placeholder="Ваше имя">
+                                <input type="tel" placeholder="Ваш номер телефона">
+                            </div>
+                            <textarea name="" id="" placeholder="Комментарий"></textarea>
+                            <div class="btns">
+                                <img src="./images/capcha.png" class="capcha" alt="">
+                                <button class="btn-red">Подобрать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/buying-bg.png" alt="" class="buying__bg">
+                </div>
+            </section>
+            <!-- Buying end -->
+
+            <!-- Implementation -->
+            <section class="implementation">
+                <div class="container">
+                    <h2 class="sec-title implementation__title">Реализация</h2>
+                    <p class="implementation__description">Реализация вашего автомобиля у нас на площадке.</p>
+                    <h3 class="implementation__subtitle">Что входит в эту услугу:</h3>
+                    <ul class="implementation__list">
+                        <li class="implementation__list_item">
+                            <div class="icon">
+                                <img src="./images/icon-1.svg" alt="">
+                            </div>
+                            <h4>Чистка автомобиля</h4>
+                            <p>подготовка к фотосессии</p>
+                        </li>
+                        <li class="implementation__list_item">
+                            <div class="icon">
+                                <img src="./images/icon-2.svg" alt="">
+                            </div>
+                            <h4>Фотосессия автомобиля</h4>
+                            <p>с видео обзором</p>
+                        </li>
+                        <li class="implementation__list_item">
+                            <div class="icon">
+                                <img src="./images/icon-3.svg" alt="">
+                            </div>
+                            <h4>Профессиональный текст</h4>
+                            <p>Для вашего объявления</p>
+                        </li>
+                        <li class="implementation__list_item">
+                            <div class="icon">
+                                <img src="./images/icon-4.svg" alt="">
+                            </div>
+                            <h4>Размещение объявления на площадке</h4>
+                            <p>от нашего или вашего имени</p>
+                        </li>
+                        <li class="implementation__list_item">
+                            <div class="icon">
+                                <img src="./images/icon-5.svg" alt="">
+                            </div>
+                            <h4>Показываем автомобиль клиенту</h4>
+                            <p>тест драйв и показ на  подъемнике</p>
+                        </li>
+                        <li class="implementation__list_item">
+                            <div class="icon">
+                                <img src="./images/icon-6.svg" alt="">
+                            </div>
+                            <h4>Все переговоры с клиентом</h4>
+                            <p>подготовка сделки</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>* Также по этой услуге, приглашаем к сотрудничеству авто продавцов. На стоянке можем разместить до 15 авто.</li>
+                        <li>* Автомобили мы берем на реализацию после быстрого осмотра нашим специалистом.</li>
+                        <li>* По всем вопросам, обращайтесь пожалуйста по телефону или по эл. почте.</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Implementation end -->
+
+            <!-- Why us -->
+            <section class="why-us">
+                <img src="./images/why-us-bg.png" alt="" class="why-us__bg">
+                <div class="container why-us__container">
+                    <h2 class="sec-title why-us__title">Почему мы</h2>
+                    <p class="why-us__description">Почему выбирают нас</p>
+                    <ul>
+                        <li>
+                            <img src="./images/number-icon-1.svg" alt="" class="number">
+                            <img src="./images/whuy-us-icon-1.svg" alt="">
+                            <p>Большой опыт в работе с автомобилями</p>
+                        </li>
+                        <li>
+                            <img src="./images/number-icon-2.svg" alt="" class="number">
+                            <img src="./images/whuy-us-icon-2.svg" alt="">
+                            <p>Понимание рынка и его <br> текущих направлений</p>
+                        </li>
+                        <li>
+                            <img src="./images/number-icon-3.svg" alt="" class="number">
+                            <img src="./images/whuy-us-icon-3.svg" alt="">
+                            <p>Все наши услуги делаем <br> в одном месте</p>
+                        </li>
+                        <li>
+                            <img src="./images/number-icon-4.svg" alt="" class="number">
+                            <img src="./images/whuy-us-icon-4.svg" alt="">
+                            <p>Хорошая локация площадки, рядом с Центром и рядом с Аэропортом</p>
+                        </li>
+                        <li>
+                            <img src="./images/number-icon-5.svg" alt="" class="number">
+                            <img src="./images/whuy-us-icon-5.svg" alt="">
+                            <p>Индивидуальный подход к каждому клиенту</p>
+                        </li>
+                        <li>
+                            <img src="./images/number-icon-6.svg" alt="" class="number">
+                            <img src="./images/whuy-us-icon-6.svg" alt="">
+                            <p>Все время на связи по всем вопросам наших клиентов</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Why us end -->
+
+            <!-- About -->
+            <section class="about">
+                <div class="container">
+                    <h2 class="sec-title about__title">О нас</h2>
+                    <div class="about__content">
+                        <div class="about__content_left">
+                            <div class="about__descriptions">
+                                <p>Advanced - это команда специалистов в сфере продажи, ремонта автомобилей с 15-ти летнем опытом. Данное направление является частью компании BP Auto. </p>
+                                <p>Так как мы сами начали с покупке, продажи автомобилей, еще в далеком 2012 году, мы хорошо понимаем рынок, тенденции на нем и формирования цен, но помимо, продажи авто, имеем также свой автосервис, где ремонтируем автомобили для своих клиентов, таким образом, мы покрываем и техническую часть. </p>
+                                <p>Это и делает наше предложение интересным и конкурентным. У нас не только можно приобрести хороший, проверенный б/у автомобиль но и обслуживать его дальше у нас в автосервисе. Есть также и платная гарантия на купленные у нас автомобили. </p>
+                                <p>Помимо покупке автомобиля, мы также можем выкупить ваш старый авто, можно сделать трейд-ин или оставить его у нас на реализацию. </p>
+                                <p>Принцип одного партнера или номера в записной книжке, который поможет вам, решить все повседневные автомобильные вопросы. Все в одном месте, с хорошим отношением и по адекватным ценам. </p>
+                                <p>Это точно будет, что-то новое для вас и мы надеемся наш подход вам понравится. </p>
+                                <p>Будем рады долгосрочному сотрудничеству с новыми клиентами.  </p>
+                                <p>По всем вопросам, пожалуйста обращайтесь звоните. Все контакты есть на сайте. </p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <img src="./images/about-icon-1.svg" alt="">
+                                    <h4>Проверка авто и подбор</h4>
+                                </li>
+                                <li>
+                                    <img src="./images/about-icon-2.svg" alt="">
+                                    <h4>Автосервис</h4>
+                                </li>
+                                <li>
+                                    <img src="./images/about-icon-3.svg" alt="">
+                                    <h4>Доставка авто</h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="about__content_right">
+                            <ul>
+                                <li class="active">
+                                    <h4>2012</h4>
+                                    <p>Начало работы компании в сфере покупки-продажи авто</p>
+                                </li>
+                                <li class="active">
+                                    <h4>2018</h4>
+                                    <p>Открытие первого автосервиса <br> (на партнерской основе)</p>
+                                </li>
+                                <li class="active">
+                                    <h4>2020</h4>
+                                    <p>Открытие второго, <br>персонального автосервиса</p>
+                                </li>
+                                <li>
+                                    <h4>2024</h4>
+                                    <p>Объединение двух направлений <br>по продаже и ремонту авто</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About end -->
+
+            <!-- Contact -->
+            <section class="contact">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af12acd70bf4daf4070aa32b86580b6638ad79b441c3f7a6caab30c375669808d&amp;source=constructor" width="1280" height="502" frameborder="0"></iframe>
+                <div class="container contact__container">
+                    <div class="contact__content">
+                        <h2 class="sec-title contact__title">Контакты</h2>
+                        <h3 class="contact__subtitle">ADVANCED | Bp Auto</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/contact-icon-1.svg" alt="">
+                                    <span>Slokas iela 52, Rīga, LV-1007</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/contact-icon-2.svg" alt="">
+                                    <span>Тел: + (371) 26858674</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/contact-icon-3.svg" alt="">
+                                    <span>Email: info@bpauto.lv</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/contact-icon-4.svg" alt="">
+                                    <span>Web: www.bpauto.lv</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact end -->
+
+        </main>
+
+        <!-- Footer -->
+        <section class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <a href="/" class="footer__logo">
+                        <img src="./images/logo-light.svg" alt="">
+                    </a>
+                    <ul class="footer__navs">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Продажа авто</a>
+                        </li>
+                        <li>
+                            <a href="#">Покупка авто</a>
+                        </li>
+                        <li>
+                            <a href="#">Реализация</a>
+                        </li>
+                        <li>
+                            <a href="#">Почему мы</a>
+                        </li>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__bottom">
+                    <p>Слокас 52 (LV-1007) Рига</p>
+                    <p>Все права защищены © Bp Auto</p>
+                </div>
+            </div>
+        </section>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- JS file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

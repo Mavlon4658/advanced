@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <a href="/" class="header__logo">
+                        <img src="./images/logo-dark.svg" alt="">
+                        <img src="./images/logo-light.svg" alt="">
+                    </a>
+                    <div class="networks">
+                        <a href="#" class="location-icon">
+                            <img src="./images/map.svg" alt="">
+                            <span>Slokas 52, Riga</span>
+                        </a>
+                        <ul class="networks_link">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/network-1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/network-2.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/network-3.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/network-4.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="service_link">
+                            <a href="tel:+37126858674">+371 26858674</a>
+                            <p>Обслуживанеи клиентов</p>
+                        </div>
+                        <div class="select_lang">
+                            <div class="select_lang__btn">
+                                <img src="./images/globe.svg" alt="">
+                                <input type="text" value="Ru" disabled>
+                                <img src="./images/arrow-down.svg" alt="">
+                            </div>
+                            <ul class="select_lang__list">
+                                <li>Ru</li>
+                                <li>En</li>
+                                <li>Fr</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="bars">
+                        <img src="./images/bars.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Продажа авто</a>
+                        </li>
+                        <li>
+                            <a href="#">Покупка авто</a>
+                        </li>
+                        <li>
+                            <a href="#">Реализация</a>
+                        </li>
+                        <li>
+                            <a href="#">Почему мы</a>
+                        </li>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-red modal__open">Заказать звонок</a>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Mobile menu -->
+        <section class="mobile-menu">
+            <div class="mobile-menu__top">
+                <div class="mobile-menu__head">
+                    <a href="/">
+                        <img src="./images/logo-dark.svg" alt="">
+                    </a>
+                    <button class="mobile-menu__close">
+                        <img src="./images/times-blue.svg" alt="">
+                    </button>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Продажа авто</a>
+                    </li>
+                    <li>
+                        <a href="#">Покупка авто</a>
+                    </li>
+                    <li>
+                        <a href="#">Реализация</a>
+                    </li>
+                    <li>
+                        <a href="#">Почему мы</a>
+                    </li>
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-menu__bottom">
+                <a href="#" class="btn-red">Заказать звонок</a>
+                <div class="service_link">
+                    <a href="tel:+37126858674">+371 26858674</a>
+                    <p>Обслуживанеи клиентов</p>
+                </div>
+                <div class="mobile-menu__bottom_in">
+                    <a href="#" class="location-icon">
+                        <img src="./images/map.svg" alt="">
+                        <span>Slokas 52, Riga</span>
+                    </a>
+                    <ul class="networks_link">
+                        <li>
+                            <a href="#">
+                                <img src="./images/network-1.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/network-2.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/network-3.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/network-4.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="select_lang">
+                        <div class="select_lang__btn">
+                            <img src="./images/globe.svg" alt="">
+                            <input type="text" value="Ru" disabled>
+                            <img src="./images/arrow-down.svg" alt="">
+                        </div>
+                        <ul class="select_lang__list">
+                            <li>Ru</li>
+                            <li>En</li>
+                            <li>Fr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mobile menu end -->
+
+        <!-- Modal -->
+        <section class="modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content contact-form">
+                <button class="modal__close">
+                    <img src="./images/times-white.svg" alt="">
+                </button>
+                <h2 class="modal__title">Оставьте ваше сообщение</h2>
+                <div class="form_group">
+                    <div class="form_group__item">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="tel" placeholder="Ваш номер телефона">
+                    </div>
+                    <textarea name="" id="" placeholder="Комментарий"></textarea>
+                    <div class="btns">
+                        <img src="./images/capcha.png" class="capcha" alt="">
+                        <button class="btn-red">Подобрать</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal end -->
+
+        <main>
+
+            <!-- Product -->
+            <section class="product">
+                <div class="container">
+                    <ul class="product__navigation">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <img src="./images/arrow-right.svg" alt="">
+                        <li>
+                            <a href="#">Машины на месте</a>
+                        </li>
+                        <img src="./images/arrow-right.svg" alt="">
+                        <li>
+                            <span>BMW 320d (135 kw)</span>
+                        </li>
+                    </ul>
+                    <ul class="product__card">
+                        <li>
+                            <a href="#">
+                                <img src="./images/product-card-1.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/product-card-2.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/product-card-3.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/product-card-4.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/product-card-5.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/product-card-6.png" alt="">
+                                <span>Посмотреть еще</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="sec-title product__title">BMW 320d (135 kw)</h2>
+                    <h3 class="product__price">12 500 €</h3>
+                    <ul class="product__list">
+                        <li class="product__list_item">
+                            <img src="./images/product-icon-1.svg" alt="">
+                            <div>
+                                <p>Год выпуска</p>
+                                <h4>2014</h4>
+                            </div>
+                        </li>
+                        <li class="product__list_item">
+                            <img src="./images/product-icon-2.svg" alt="">
+                            <div>
+                                <p>Пробег</p>
+                                <h4>79 326 км</h4>
+                            </div>
+                        </li>
+                        <li class="product__list_item">
+                            <img src="./images/product-icon-3.svg" alt="">
+                            <div>
+                                <p>Артикул</p>
+                                <h4>AP-054</h4>
+                            </div>
+                        </li>
+                        <li class="product__list_item">
+                            <img src="./images/product-icon-4.svg" alt="">
+                            <div>
+                                <p>Коробка</p>
+                                <h4>Автомат</h4>
+                            </div>
+                        </li>
+                        <li class="product__list_item">
+                            <img src="./images/product-icon-5.svg" alt="">
+                            <div>
+                                <p>Мотор</p>
+                                <h4>2.0 TDI</h4>
+                            </div>
+                        </li>
+                        <li class="product__list_item">
+                            <img src="./images/product-icon-6.svg" alt="">
+                            <div>
+                                <p>Тип продажи</p>
+                                <h4>Свой авто</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Product end -->
+
+        </main>
+
+    </div>
+
+    <!-- JS file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
